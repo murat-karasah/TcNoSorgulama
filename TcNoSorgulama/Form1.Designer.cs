@@ -30,14 +30,14 @@ namespace TcNoSorgulama
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.dogumYili_txtBox = new System.Windows.Forms.TextBox();
+            this.soyisim_txtBox = new System.Windows.Forms.TextBox();
+            this.isim_txtBox = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.tcNo_txtBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.isim_txtBox = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.soyisim_txtBox = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.dogumYili_txtBox = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btn_Kontrol = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
@@ -61,15 +61,44 @@ namespace TcNoSorgulama
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Kişisel Bilgiler";
             // 
-            // label2
+            // dogumYili_txtBox
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 20);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "T.C Kimlik Numarası";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.dogumYili_txtBox.Location = new System.Drawing.Point(9, 175);
+            this.dogumYili_txtBox.Name = "dogumYili_txtBox";
+            this.dogumYili_txtBox.Size = new System.Drawing.Size(135, 20);
+            this.dogumYili_txtBox.TabIndex = 2;
+            // 
+            // soyisim_txtBox
+            // 
+            this.soyisim_txtBox.Location = new System.Drawing.Point(9, 135);
+            this.soyisim_txtBox.Name = "soyisim_txtBox";
+            this.soyisim_txtBox.Size = new System.Drawing.Size(135, 20);
+            this.soyisim_txtBox.TabIndex = 2;
+            // 
+            // isim_txtBox
+            // 
+            this.isim_txtBox.Location = new System.Drawing.Point(9, 87);
+            this.isim_txtBox.Name = "isim_txtBox";
+            this.isim_txtBox.Size = new System.Drawing.Size(135, 20);
+            this.isim_txtBox.TabIndex = 2;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(6, 158);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(101, 13);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Doğum Tarihi YYYY";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 118);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(42, 13);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Soyisim";
             // 
             // tcNo_txtBox
             // 
@@ -86,48 +115,15 @@ namespace TcNoSorgulama
             this.label3.Size = new System.Drawing.Size(25, 13);
             this.label3.TabIndex = 1;
             this.label3.Text = "İsim";
-            this.label3.Click += new System.EventHandler(this.label2_Click);
             // 
-            // isim_txtBox
+            // label2
             // 
-            this.isim_txtBox.Location = new System.Drawing.Point(9, 87);
-            this.isim_txtBox.Name = "isim_txtBox";
-            this.isim_txtBox.Size = new System.Drawing.Size(135, 20);
-            this.isim_txtBox.TabIndex = 2;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 118);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(42, 13);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Soyisim";
-            this.label4.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // soyisim_txtBox
-            // 
-            this.soyisim_txtBox.Location = new System.Drawing.Point(9, 135);
-            this.soyisim_txtBox.Name = "soyisim_txtBox";
-            this.soyisim_txtBox.Size = new System.Drawing.Size(135, 20);
-            this.soyisim_txtBox.TabIndex = 2;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 158);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(101, 13);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Doğum Tarihi YYYY";
-            this.label5.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // dogumYili_txtBox
-            // 
-            this.dogumYili_txtBox.Location = new System.Drawing.Point(9, 175);
-            this.dogumYili_txtBox.Name = "dogumYili_txtBox";
-            this.dogumYili_txtBox.Size = new System.Drawing.Size(135, 20);
-            this.dogumYili_txtBox.TabIndex = 2;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 20);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(101, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "T.C Kimlik Numarası";
             // 
             // groupBox2
             // 
@@ -147,6 +143,7 @@ namespace TcNoSorgulama
             this.btn_Kontrol.TabIndex = 0;
             this.btn_Kontrol.Text = "Kontrol Et";
             this.btn_Kontrol.UseVisualStyleBackColor = true;
+            this.btn_Kontrol.Click += new System.EventHandler(this.btn_Kontrol_Click);
             // 
             // Form1
             // 

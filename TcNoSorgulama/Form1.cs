@@ -17,6 +17,10 @@ namespace TcNoSorgulama
             InitializeComponent();
         }
 
-      
+        private void btn_Kontrol_Click(object sender, EventArgs e)
+        {
+            tckimlikno.KPSPublic kps = new tckimlikno.KPSPublic();
+            bool kontrol = kps.TCKimlikNoDogrula(long.Parse(tcNo_txtBox.Text), isim_txtBox.Text.ToUpper(), soyisim_txtBox.Text.ToUpper(), int.Parse(dogumYili_txtBox.Text));
+        }
     }
 }
