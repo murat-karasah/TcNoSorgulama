@@ -21,6 +21,14 @@ namespace TcNoSorgulama
         {
             tckimlikno.KPSPublic kps = new tckimlikno.KPSPublic();
             bool kontrol = kps.TCKimlikNoDogrula(long.Parse(tcNo_txtBox.Text), isim_txtBox.Text.ToUpper(), soyisim_txtBox.Text.ToUpper(), int.Parse(dogumYili_txtBox.Text));
+            if (kontrol)
+            {
+                MessageBox.Show("Bilgileriniz Doğru", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Bilgileriniz Yanlış", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 }
